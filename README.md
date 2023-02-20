@@ -5,6 +5,7 @@ This website it's supposed to help me with some activities and stuff that I'm fo
 Goals:
 - Learn how to make a simple website with flask, python and other programming languages.
 - Be able to make my website work ofc.
+- Make daily updates.
 - Last but not least, find my own website useful and well looking, to make my life way easier.
 
 ![](https://i.imgur.com/kdwubwQ.gif)
