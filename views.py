@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, redirect, url_for
-views = Blueprint(__name__, "views")
+views = Blueprint(__name__, "views", static_folder="static", template_folder="templates")
 
 @views.route("/")
 def home():
