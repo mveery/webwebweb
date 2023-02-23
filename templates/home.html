@@ -1,51 +1,82 @@
-{% extends "base.html" %} {% block title %}Home{% endblock %}
+{% extends "base.html" %} {% block title %}Mary's Home{% endblock %}
 {% block content %}
-    <h1 style="text-align:center;">Hi Mary!
+<div>
+  <img src="{{ url_for('static', filename='images/header.jpg')}}" class="img-fluid" alt="Responsive image">
+</div>
+<br>
+  <h1 class="header-mary">Hi Mary!
     </h1>
-    <p class="lead" style="text-align:center;"><small>Welcome to your website :) it's nice to have you back here</small>
+    <p class="lead"><small>Welcome to your website! It's nice to have you back here :)</small>
     </p>
-    <div class="card-group">
+    <br>
+  <div class="home-mary">
+    <p class="home-text-mary"><small><strong>— Home</strong></small></p>
+  </div>
+   <div class="card-group">
         <div class="card">
-          <img src="{{ url_for('static', filename='images/activities.jpg')}}" class="card-img-top" alt="...">
+          <img src="{{ url_for('static', filename='images/activities.jpg')}}" class="card-img-top" alt="activities">
           <div class="card-body">
             <div class="card text-center">
-                <a href="#" class="btn btn-outline-dark">Activities</a></div>
+                <a href="/progress/activities" class="btn btn-outline-dark">Activities</a></div>
             <br><br />
             <p class="card-text">For fun, research, seminars, proyects for CS, etc.</p>
-            <p class="card-text"><small class="text-muted">Last update: 20/02</small></p>
+            <p class="card-text"><small class="text-muted">Last update: 23/02</small></p>
           </div>
         </div>
         <div class="card">
-            <img src="{{ url_for('static', filename='images/academics.jpg')}}" class="card-img-top" alt="...">
+            <img src="{{ url_for('static', filename='images/academics.jpg')}}" class="card-img-top" alt="academics">
         <div class="card-body">
             <div class="card text-center">
-                <a href="#" class="btn btn-outline-dark">Academics</a></div>
+                <a href="/progress/academics" class="btn btn-outline-dark">Academics</a></div>
             <br><br />
             <p class="card-text">All about school and college, courses and my grades.</p>
-            <p class="card-text"><small class="text-muted">Last update: 20/02</small></p>
+            <p class="card-text"><small class="text-muted">Last update: 23/02</small></p>
           </div>
         </div>
         <div class="card">
-          <img src="{{ url_for('static', filename='images/upcoming.jpg')}}" class="card-img-top" alt="...">
+          <img src="{{ url_for('static', filename='images/upcoming.jpg')}}" class="card-img-top" alt="upcoming">
           <div class="card-body">
             <div class="card text-center">
-                <a href="#" class="btn btn-outline-dark">Upcoming</a>
+                <a href="/progress/upcoming" class="btn btn-outline-dark">Upcoming</a>
             </div>
             <br><br />
             <p class="card-text">Deadlines and stuff coming up that I need to do.</p>
-            <p class="card-text"><small class="text-muted">Last update: 20/02</small></p>
+            <p class="card-text"><small class="text-muted">Last update: 23/02</small></p>
           </div>
         </div>
         <div class="card">
-            <img src="{{ url_for('static', filename='images/hobbies.jpg')}}" class="card-img-top" alt="...">
+            <img src="{{ url_for('static', filename='images/hobbies.jpg')}}" class="card-img-top" alt="hobbies">
             <div class="card-body">
                 <div class="card text-center">
-                    <a href="#" class="btn btn-outline-dark">Hobbies</a>
+                    <a href="/progress/hobbies" class="btn btn-outline-dark">Hobbies</a>
             </div>
               <br><br />
               <p class="card-text">Things I'm interest in and would like to spend time on.</p>
-              <p class="card-text"><small class="text-muted">Last update: 20/02</small></p>
+              <p class="card-text"><small class="text-muted">Last update: 23/02</small></p>
             </div>
         </div>
       </div>
+      <br><br/>
+      <br><br/>
+  <div class="bottom-done">
+    <p class="bottom-text-done"><small><strong>— Things you're done with...</strong></small></p>
+  </div>
+  <br>
+  <div>
+    <img src="{{ url_for('static', filename='images/totoro.jpg')}}" class="img-fluid" alt="ghibli">
+    <br>
+    <ul class="list-done"><p>
+      <li>Example 1</li><br>
+      <li>Example 2</li><br>
+      <li>Example 3</li><br>
+      <li>Example 4</li><br>
+    </p></ul>
+  </div>
+  <br>
+  <br/>
+  <div class="bottom-all">
+    <p class="bottom-text-all"><small><strong>— And that's all for now...</strong></small></p>
+  </div>
+  <br>
+  <br/>
 {% endblock %}

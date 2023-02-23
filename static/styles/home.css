@@ -1,0 +1,44 @@
+body {
+    color:rgb(48, 74, 97);
+    background-color: #e6e1e1;
+}
+
+.header-mary {
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.home-mary {
+    color: #58503e;
+    background-color: #aca18a;
+    line-height: 1.9;
+    letter-spacing: 2px;
+}
+
+.home-text-mary {
+    margin-left: 15px;
+}
+
+.card-body {
+    background-color: #f4f4f4;
+}
+
+.lead {
+    letter-spacing: 2px;
+}
+
+.bottom-done {
+    color: #58503e;
+    background-color: #aca18a;
+    line-height: 1.9;
+    letter-spacing: 2px;
+}
+
+.bottom-text-done {
+    margin-left: 15px;
+}
+
+.list-done {
+    margin-left: 600px;
+    letter-spacing: 2px;
+}
